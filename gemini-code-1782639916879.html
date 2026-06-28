@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>קורא ספרים חכם</title>
+    <script>
+      // הגדרת משתני הסביבה הגלובליים שהקוד מצפה לקבל
+      window.__app_id = "pdf-reader-pro";
+      window.__firebase_config = JSON.stringify({
+        apiKey: "YOUR_FIREBASE_API_KEY",
+        authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_PROJECT_ID.appspot.com",
+        messagingSenderId: "YOUR_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      });
+      // אופציונלי: טוקן התחברות ראשוני במידה ויש
+      window.__initial_auth_token = ""; 
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
